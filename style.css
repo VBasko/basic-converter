@@ -174,8 +174,8 @@ p {
   background-color: var(--dark-violet);
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  -webkit-mask-image: url(/images/theme-light-dark.svg);
-  mask-image: url(/images/theme-light-dark.svg);
+  -webkit-mask-image: url(images/theme-light-dark.svg);
+  mask-image: url(images/theme-light-dark.svg);
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
 }

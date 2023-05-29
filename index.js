@@ -20,7 +20,15 @@ const resultMass = document.getElementById("result-mass");
 
 convertBtnEl.addEventListener("click", () => {
   const value = numberInputEl.value;
+  convert(value);
+});
+numberInputEl.addEventListener("keypress", (event) => {
+  event.preventDefault;
+  const value = numberInputEl.value;
+  event.key === "Enter" ? convert(value) : null;
+});
 
+const convert = (value) => {
   /* Convert length */
   resultLength.innerText = `${value} meters = ${convertMetersToFeet(
     value
@@ -35,7 +43,7 @@ convertBtnEl.addEventListener("click", () => {
   resultMass.innerText = `${value} kilos = ${convertPoundsToKilos(
     value
   )} pounds | ${value} pounds = ${convertPoundsToKilos(value)} kilos`;
-});
+};
 
 /* ------------------------------------------------------------ */
 /* CONVERSION FUNCTIONS */
